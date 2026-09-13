@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baby Tracker — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Baby Tracker app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfbfd;
+    --surface: #f0f6fc;
+    --surface-2: #e6f0fa;
+    --ink: #212530;
+    --ink-soft: #5b6472;
+    --ink-faint: #8791a0;
+    --accent: #1c78d8;
+    --accent-ink: #0c4f9e;
+    --accent-soft: #ee8fc8;
+    --border: #dbe6f2;
+    --good-bg: #eaf6ee;
+    --good-ink: #1f7a44;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12151b;
+      --surface: #191f28;
+      --surface-2: #1f2733;
+      --ink: #e9edf4;
+      --ink-soft: #a3aebd;
+      --ink-faint: #707c8c;
+      --accent: #74b3ff;
+      --accent-ink: #bcdcff;
+      --accent-soft: #f3a8d4;
+      --border: #2a3341;
+      --good-bg: #163325;
+      --good-ink: #6fd39a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Karla', 'Segoe UI', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2 {
+    font-family: 'Baloo 2', 'Karla', sans-serif;
+    text-wrap: balance;
+    letter-spacing: 0.01em;
+  }
+  a { color: var(--accent-ink); text-decoration-color: color-mix(in srgb, var(--accent-ink) 40%, transparent); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--accent-ink); }
+
+  .shell {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  header.top {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+  .mark {
+    flex: none;
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    background: linear-gradient(155deg, var(--accent) 0%, var(--accent-soft) 100%);
+    display: grid;
+    place-items: center;
+    font-size: 22px;
+    box-shadow: 0 6px 16px -8px color-mix(in srgb, var(--accent) 55%, transparent);
+  }
+  .titleblock h1 {
+    margin: 0 0 4px;
+    font-size: clamp(28px, 4.4vw, 36px);
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .titleblock .sub {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    margin: 22px 0 32px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+  .meta strong { color: var(--ink-soft); font-weight: 600; }
+
+  .tldr {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 24px;
+    margin-bottom: 40px;
+  }
+  .tldr .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-bottom: 10px;
+  }
+  .tldr ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: grid;
+    gap: 10px;
+  }
+  .tldr li {
+    display: flex;
+    gap: 10px;
+    font-size: 15.5px;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .tldr li::before {
+    content: "";
+    flex: none;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-top: 8px;
+    background: var(--accent);
+  }
+  .tldr b { font-weight: 700; }
+
+  nav.toc {
+    margin-bottom: 44px;
+  }
+  nav.toc .label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 10px;
+  }
+  nav.toc ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    columns: 2;
+    column-gap: 24px;
+    font-size: 14px;
+  }
+  nav.toc li { break-inside: avoid; margin-bottom: 7px; }
+  nav.toc a { color: var(--ink-soft); }
+  nav.toc a:hover { color: var(--accent-ink); }
+  nav.toc .num {
+    font-variant-numeric: tabular-nums;
+    color: var(--ink-faint);
+    margin-right: 6px;
+  }
+
+  section.article {
+    max-width: 66ch;
+  }
+  section.clause {
+    padding: 30px 0;
+    border-top: 1px solid var(--border);
+    scroll-margin-top: 20px;
+  }
+  .clause h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 12px;
+  }
+  .clause h2 .num {
+    font-family: 'Karla', sans-serif;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--accent-ink);
+    font-size: 14px;
+    background: var(--surface-2);
+    border-radius: 7px;
+    padding: 3px 8px;
+  }
+  .clause p, .clause li {
+    font-size: 15.5px;
+    line-height: 1.68;
+    color: var(--ink);
+  }
+  .clause p { margin: 0 0 14px; }
+  .clause p:last-child { margin-bottom: 0; }
+  .clause ul { margin: 0 0 14px; padding-left: 22px; }
+  .clause li { margin-bottom: 6px; }
+  .clause .soft { color: var(--ink-soft); }
+
+  .stack {
+    display: grid;
+    gap: 12px;
+    margin: 4px 0 16px;
+  }
+  .partner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4px 14px;
+    padding: 14px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+  .partner .who {
+    font-weight: 700;
+    font-size: 14.5px;
+    color: var(--ink);
+    grid-column: 1;
+  }
+  .partner .what {
+    font-size: 14px;
+    color: var(--ink-soft);
+    grid-column: 2;
+  }
+  .partner .why {
+    grid-column: 1 / -1;
+    font-size: 13.5px;
+    color: var(--ink-faint);
+    margin-top: 2px;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: var(--good-bg);
+    color: var(--good-ink);
+    margin: 4px 0 16px;
+  }
+
+  footer.end {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13.5px;
+    color: var(--ink-faint);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  @media (max-width: 560px) {
+    nav.toc ol { columns: 1; }
+    .partner { grid-template-columns: 1fr; }
+    .partner .what { grid-column: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="top">
+    <div class="mark" aria-hidden="true">🌙</div>
+    <div class="titleblock">
+      <h1>Baby Tracker — Privacy Policy</h1>
+      <p class="sub">How feeding, sleep, diaper, and growth entries are handled — in plain terms first, details after.</p>
+    </div>
+  </header>
+
+  <div class="meta">
+    <span><strong>Effective</strong> September 13, 2026</span>
+    <span><strong>Applies to</strong> Baby Tracker for Android (com.esrvibecode.babytracker)</span>
+    <span><strong>Developer</strong> esr-vibecode</span>
+  </div>
+
+  <div class="tldr">
+    <div class="eyebrow">In plain terms</div>
+    <ul>
+      <li><span><b>Everything you log — feeds, diapers, sleep, growth, notes — stays on your phone.</b> There's no account, no server, no sync. We never see it.</span></li>
+      <li><span>The app shows ads and offers a one-time "remove ads" purchase. Those go through Google AdMob and RevenueCat, which is where any advertising or payment identifiers are handled — never your baby's data.</span></li>
+      <li><span>We collect small, anonymous usage counts (like "a feed was logged") through Firebase Analytics to see which features are used. <b>No baby's name, dates, or notes are ever included.</b></span></li>
+      <li><span>You can export your data to a file or delete it any time from Settings, and everything is erased the moment you uninstall the app.</span></li>
+    </ul>
+  </div>
+
+  <nav class="toc" aria-label="Sections">
+    <div class="label">Contents</div>
+    <ol>
+      <li><a href="#collect"><span class="num">01</span>Information we collect</a></li>
+      <li><a href="#storage"><span class="num">02</span>Where it lives</a></li>
+      <li><a href="#partners"><span class="num">03</span>Third-party services</a></li>
+      <li><a href="#ads"><span class="num">04</span>Advertising &amp; your choices</a></li>
+      <li><a href="#children"><span class="num">05</span>Children's privacy</a></li>
+      <li><a href="#rights"><span class="num">06</span>Your controls</a></li>
+      <li><a href="#security"><span class="num">07</span>Security</a></li>
+      <li><a href="#changes"><span class="num">08</span>Changes to this policy</a></li>
+      <li><a href="#contact"><span class="num">09</span>Contact</a></li>
+    </ol>
+  </nav>
+
+  <section class="article">
+    <section class="clause" id="collect">
+      <h2><span class="num">01</span>Information we collect</h2>
+      <p>Baby Tracker is built around one rule: <span class="soft">the tracking data is yours, and it stays on your device.</span> When you use the app, you create:</p>
+      <ul>
+        <li><b>A baby profile</b> — name or nickname, date of birth, gender (optional), and a chosen emoji avatar.</li>
+        <li><b>Timeline entries</b> — nursing, bottle, pump, diaper, sleep, growth, milestones, and free-text notes, each with a timestamp you set or that the app records automatically.</li>
+        <li><b>App preferences</b> — units (ml/oz, kg/lb), theme, and notification settings.</li>
+      </ul>
+      <p>None of this is transmitted to us or to any server we operate. Baby Tracker has no backend and no user accounts to log into.</p>
+    </section>
+
+    <section class="clause" id="storage">
+      <h2><span class="num">02</span>Where it lives</h2>
+      <span class="badge">On-device only</span>
+      <p>All tracking data is stored in a local database on your phone (SQLite). It is only ever read or written by the app running on your device.</p>
+      <p>If you use the built-in export feature, a file is generated and handed to your phone's own share sheet — you choose where it goes (email, a folder, another app). We don't receive a copy. Uninstalling the app deletes the local database along with it.</p>
+    </section>
+
+    <section class="clause" id="partners">
+      <h2><span class="num">03</span>Third-party services</h2>
+      <p>A few well-known services help run parts of the app that aren't tracking-related. None of them receive baby names, dates, or notes — only the technical data described below.</p>
+      <div class="stack">
+        <div class="partner">
+          <div class="who">Google AdMob</div>
+          <div class="what">Shows the in-app ads and the optional "watch an ad to unlock" rewards.</div>
+          <div class="why">Receives an advertising identifier and general device/app info, per Google's <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a>. In the EEA, UK, and Switzerland, ads are only personalized if you consent through the message the app shows on first launch.</div>
+        </div>
+        <div class="partner">
+          <div class="who">RevenueCat</div>
+          <div class="what">Processes the one-time "remove ads" purchase through Google Play Billing.</div>
+          <div class="why">Receives your Google Play purchase token and app usage tied to that purchase — see RevenueCat's <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">privacy policy</a>.</div>
+        </div>
+        <div class="partner">
+          <div class="who">Firebase Analytics</div>
+          <div class="what">Counts anonymous, aggregated events — e.g. "a note was logged" or "the stats screen was opened" — to understand which features get used.</div>
+          <div class="why">Event names never carry baby data as a parameter; this is enforced in how the app is built, not just a policy on paper.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clause" id="ads">
+      <h2><span class="num">04</span>Advertising &amp; your choices</h2>
+      <p>Ads never interrupt an in-progress entry, and never appear on the Now screen or while a feeding/sleep timer is running. Nighttime (10pm–6am) is ad-free by design. A single "Remove ads" purchase turns off ads entirely, permanently.</p>
+      <p>If you're in the EEA, UK, or Switzerland, you'll see a consent message the first time you open the app, and you can change your choice at any time from <span class="soft">Settings → Privacy choices</span>.</p>
+    </section>
+
+    <section class="clause" id="children">
+      <h2><span class="num">05</span>Children's privacy</h2>
+      <p>Baby Tracker is a tool <i>for parents and caregivers</i> to keep their own records — it is not directed at children, and we don't knowingly collect personal information from children through the app. The baby's profile you create is entered and controlled by you, stays on your device, and is never used to identify or contact a child.</p>
+    </section>
+
+    <section class="clause" id="rights">
+      <h2><span class="num">06</span>Your controls</h2>
+      <ul>
+        <li><b>Export</b> your timeline to a file at any point from Settings.</li>
+        <li><b>Delete</b> a baby profile, individual entries, or everything, directly in the app.</li>
+        <li><b>Withdraw ad consent</b> or change your region's privacy choices from Settings.</li>
+        <li><b>Uninstall</b> the app to remove all locally stored data immediately.</li>
+      </ul>
+      <p>Because we never hold a copy of your tracking data, there's no separate "request my data" process to go through — it's already on your device, exportable on demand.</p>
+    </section>
+
+    <section class="clause" id="security">
+      <h2><span class="num">07</span>Security</h2>
+      <p>Your tracking data is protected by your phone's own OS-level app sandboxing and whatever device lock you use. We recommend keeping your device's screen lock enabled, since local app data is only as protected as the device it's stored on.</p>
+    </section>
+
+    <section class="clause" id="changes">
+      <h2><span class="num">08</span>Changes to this policy</h2>
+      <p>If this policy changes in a meaningful way, we'll update the effective date above. Since the app has no accounts or push notifications for policy changes, we encourage checking back here occasionally, especially before a major update.</p>
+    </section>
+
+    <section class="clause" id="contact">
+      <h2><span class="num">09</span>Contact</h2>
+      <p>Questions about this policy or how Baby Tracker handles data: <a href="mailto:baristunatr@gmail.com">baristunatr@gmail.com</a></p>
+    </section>
+  </section>
+
+  <footer class="end">
+    <span>Baby Tracker · Privacy Policy</span>
+    <span>Effective September 13, 2026</span>
+  </footer>
+</div>
+</body>
+</html>
